@@ -53,5 +53,5 @@ class OperacoesPreProcessamento(PreProcessador):
             Imagem binarizada
         """
         self._validar_imagem(img)
-        _, img_bin = cv2.threshold(img, self.threshold_value, 255, cv2.THRESH_BINARY)
+        _, img_bin = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
         return img_bin 

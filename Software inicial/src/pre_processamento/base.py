@@ -5,7 +5,7 @@ from typing import Optional, Tuple
 class PreProcessador:
     
     def __init__(self, 
-                 kernel_size: Tuple[int, int] = (5, 5),
+                 kernel_size: Tuple[int, int] = (3, 3),
                  clahe_clip_limit: float = 2.0,
                  clahe_grid_size: Tuple[int, int] = (8, 8),
                  threshold_value: int = 127):

@@ -23,10 +23,8 @@ class OperacoesSegmentacao(Segmentador):
     def filtrar_contornos(self, contornos: List[np.ndarray]) -> List[np.ndarray]:
         """
         Filtra os contornos baseado na área.
-        
         Args:
             contornos: Lista de contornos
-            
         Returns:
             Lista de contornos filtrados
         """
